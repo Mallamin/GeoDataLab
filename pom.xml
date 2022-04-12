@@ -359,9 +359,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.lib.directory>${basedir}/lib</project.lib.directory>
         <profile.props.file>development.properties</profile.props.file>
-        <wavemaker.studio.version>10.13.0</wavemaker.studio.version>
-        <wavemaker.app.runtime.services.version>10.13.0</wavemaker.app.runtime.services.version>
-        <wavemaker.app.runtime.ui.version>10.13.0-rc.66</wavemaker.app.runtime.ui.version>
+        <wavemaker.studio.version>10.13.2</wavemaker.studio.version>
+        <wavemaker.app.runtime.services.version>10.13.2</wavemaker.app.runtime.services.version>
+        <wavemaker.app.runtime.ui.version>10.13.2-rc.67</wavemaker.app.runtime.ui.version>
         <wavemaker.artifactType>wmapp</wavemaker.artifactType>
     </properties>
 </project>
