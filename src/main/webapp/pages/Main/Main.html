@@ -1,42 +1,12 @@
-<!---->
-
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" href="./app.css" type="text/css">
-    <link rel="stylesheet" href="./lib/v6.14.1-dist/css/ol.css" type="text/css">
-    <title>OpenLayers example</title>
-</head>
-
-<body>
-
-
-
-    <h2>My Map</h2>
-    <div id='js-map' class='map'></div>
-    <script src='./app.js'></script>
-    <script src='./lib/v6.14.1-dist/ol.js'></script>
-    <!--  <script type="text/javascript"></script>-->
-
-    <!---->
-
-
-    <wm-page name="mainpage" pagetitle="Main">
-        <wm-header content="header" name="header" height="auto"></wm-header>
-        <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
-        <wm-content name="content">
-            <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-            <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
-            </wm-page-content>
-            <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
-        </wm-content>
-        <wm-footer name="footer" content="footer"></wm-footer>
-    </wm-page>
-
-
-    <!--</body>
-
-</html>-->
+<wm-page name="mainpage" pagetitle="Main">
+    <wm-header content="header" name="header" height="auto"></wm-header>
+    <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
+    <wm-content name="content">
+        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+            <wm-button class="btn-default" caption="Button" type="button" margin="unset 0.5em" name="button1" on-click="button1Click($event, widget)"></wm-button>
+        </wm-page-content>
+        <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
+    </wm-content>
+    <wm-footer name="footer" content="footer"></wm-footer>
+</wm-page>

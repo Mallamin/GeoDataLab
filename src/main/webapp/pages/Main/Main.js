@@ -37,3 +37,6 @@ Page.onReady = function() {
 
 
 };
+Page.button1Click = function ($event, widget) { 
+
+};

@@ -1,24 +1,44 @@
 /*  --------------------  */
 window.onload = init;
 
+
+const rome = ol.proj.fromLonLat([12.5, 41.9]);
+const view = new ol.View({
+    center: ol.proj.fromLonLat([37.41, 8.82]),
+    zoom: 4
+});
+
 function init() {
     var map = new ol.Map({
+        controls: ol.control.defaults({
+            rotate: false,
+            attribution: false
+        }).extend([new ol.control.ScaleLine]),
         target: 'js-map',
         layers: [
             new ol.layer.Tile({
                 source: new ol.source.OSM()
             })
         ],
-        view: new ol.View({
-            center: ol.proj.fromLonLat([37.41, 8.82]),
-            zoom: 4
-        })
+        view: view
     });
 
 }
 
 
+function onClick(id, callback) {
+    debugger;
+    document.getElementById(id).addEventListener('click', callback);
+}
 
+
+onClick('pan-to-london', function() {
+    debugger;
+    view.animate({
+        center: rome,
+        duration: 2000,
+    });
+});
 
 
 
